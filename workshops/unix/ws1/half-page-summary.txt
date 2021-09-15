@@ -1,0 +1,11 @@
+Half-Page summary
+
+Author: Oliver WIssett
+Date: 15.9.21
+Module: BL4273
+
+How far did you get in the exercises? What was easy/difficult/surprising etc?
+
+I completed the short answer questions relatively quickly. I found the renaming question a little tricky, and my be doing an over engineered solution. 
+I have previous experience working in Unix environments, namely, Ubutun, Kali, Linux Mint, and MacOS. I have never used a cluster before, or a system running RedHat, however, the core Unix features are still the same so I feel quite at home on the cluster already.
+

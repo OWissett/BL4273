@@ -1,0 +1,68 @@
+BL4273 - Unix Workshop
+
+Short answer questions:
+
+1. What are the main features of UNIX? name at least 4:
+
+    > Unix allows for multiple users to work concurrently
+    > Unix allows for multiple tasks to be run concurrently, this is implemented at a kernel level
+    > Unix is designed on the building-block approach, meaning that the commands perform a single task, but they can be connected together to complete more complex tasks. This can be done using pipes.
+    > Unix allows for pattern matching, this allows for the use of wild-cards to be able to filter and select files.
+    > Unix provides the man command, which allows the user to view the manual pages. This is a very helpful feature.
+    > Unix uses a hierachical file system, stemming from a single root directory ("/")
+    > Unix operating systems generally adhere to the POSIX IEEE standard.
+
+2. What does "more README.txt" do?
+
+    > 'more' reads a file one screenful at a time.
+
+3. What does "ls -l" do?
+
+    > It lists the files and directories in the current directory. The -l flag means that additional info is given, i.e., the 'long' format of the list. 
+
+4. Explain the advantage of executing process in the background?
+
+    > It allows the user to complete multiple tasks at once. Some tasks may take a long time to complete, backgrounding a task lets the user to
+
+5. What are file permissions?
+
+    > File permissions are a set of rules which allow different actions to be done to the file. r - indicates the permission to read the file. w - indicates the permission to write to the file. x - indicates the ability for the file to be executed. File permissions are user specific.
+
+6. What is the "chmod" command?
+
+    > chmod allows a user to set permissions for a file. This can be useful when creating scripts, and setting the file to executable.
+
+7. Rename all the files within a folder with suffix "Unix_" i.e. suppose a folder has two files a.text and b.pdf
+
+    > for f in *; do mv "$f" $(echo $f | sed 's/^/Unix_/g'); done
+
+    This is a modified version of a script found on stackoverflow.com. Original:
+
+        for f in *; do mv "$f" $(echo $f | sed 's/^/Unix_/g'); done
+
+    Author: nik
+    URL: https://stackoverflow.com/questions/1086502/rename-multiple-files-based-on-pattern-in-unix
+    Date accessed: 15.9.21
+
+8. Describe the usage and functionality of the command "rm -r *" in UNIX? Why could it be dangerous?
+
+    > This command with recursively delete all file in all child directories. Unix does not have the ability to recover data if a backup has not been made. Even if a backup has been made, it is still very likely that data will have been lost from the last time a back up was performed. The rate of backups will depend on the configuration chosen by the sys admin.
+
+9. What is wild-card interpretation?
+
+    > Wild-card interpretation allows for partial matching of partens. It allows the user to apply commands to multiple files or directors. The wild-card character is the * character.
+
+10. How can you compress a file?
+
+    > tar -zcvf [filename of output] [path to file or directory]
+
+    Meaning of flags:
+
+    z - filter the archive through gzip
+    c - creates a tar archive file
+    v - sets tar to be verbose, i.e., tar will say what is doing.
+    f - indicates that a file name will be given.
+
+
+
+ 
