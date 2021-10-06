@@ -1,4 +1,11 @@
-#!/bin/python3
+#!/usr/bin/python3
+'''
+Filename: /Users/oliver/University/computational_genomics/BL4273/workshops/Python Workshop 2/xyCount.py
+Path: /Users/oliver
+Created Date: Wednesday, September 29th 2021, 4:23:33 pm
+Author: Oliver Wissett
+'''
+
 # How many genes X and Y have
 
 filePath = "./human-genes.gtf"
